@@ -4,9 +4,12 @@
 <head>
     <title> Learning HTML </title>
 </head>
+<!-- From HTML tutorials on W3Schools.com
+For the purpose of learning html and git
+in David Huo's CPD Project. 
+S1/2023 Macquarie School of Engineering -->
 
-
-<body>
+<body style="background-color:honeydew">
 
     <h1>Learning HTML</h1>
     <p>Thus began the journey of learning HTML! Woohoo!</p>
@@ -27,7 +30,7 @@
         <br>width and height in pixels
         <br>Below is a picture of a black chicken.
     </p>
-    <img src="C:\Users\David\Desktop\COMP4060\COMP4060 CPD Project\Learning HTML\Black_Cock.jpg" 
+    <img src="C:\Users\David\Desktop\COMP4060\COMP4060 CPD Project\Learning HTML\Black_Chicken.jpg" 
     alt="Error: Black Chicken not found!! (Oh no!)" 
     width="250" height="250">
     <br>
@@ -46,11 +49,15 @@
     <p>These are everything between two <> tags.</p>
 
     <h2>Empty HTML Elements</h2>
-    <p> = HTML elements with no content. <br> Some of them don't need a closing tag. <br> br (linebreak) is one of them</p>
+    <p> = HTML elements with no content. 
+        <br> Some of them don't need a closing tag. 
+        <br> br (linebreak) is one of them
+        <br> hr (horizontal rule) is another
+    </p>
 
     <h2>HTML tags are not case sensitive</h2>
     <p>But lowercase is recommended.</p>
-
+    <hr>
 
     <h1>HTML attributes</h1>
     <p>HTML elements can have attributes like name = "value"</p>
@@ -80,10 +87,142 @@
     <p> Double and single quotes are interchangable in html. 
         <br>If attibute value need double quote, encase with single quotes and vise versa.
     </p>
-
+    <hr>
 
     <h1>HTML Headings</h1>
-    <p></p>
+    <p>
+        Headings goes down in importance from h1 to h6
+        <br>You can make heading bigger by style="font-size:[]px"
+        <h1 style="font-size:60px">like this!</h1>
+    </p>
+    <hr>
+
+    <h1>Horizontal Rules</h1>
+    <p>
+        hr tag gives a thematic break.
+    </p>
+    <hr>
+
+    <h1>pre Element</h1>
+    <pre>
+            The pre (preformatted text) element is displayed with a fixed-width font with 
+                             spaces                 and 
+            line 
+            breaks 
+            preserved
+    </pre>
+    <hr>
+
+    <h1 style="background-color: hotpink;">Background Colour</h1>
+    <p>
+        The background colour can be set as a style like such
+        <br>body style="background-color:[colour name here]"
+    </p>
+    <p style="background-color: aquamarine;">
+        You can also do it to your headings and paragraphs!
+    </p>
+    <hr>
+
+    <h1>HTML Text Formatting</h1>
+
+    <h2 style="color:brown">Text Colour</h2>
+    <p style="color: green;">
+        By using "color:[colour name]" in style, you can change text colours.
+        <br> rbg/rbga values rgba(r,g,b,a) Hex value #ff1234 and HSLA values hsl(9, 100%, 64%) can be used too!
+    </p>
+
+    <h2 style="font-size:300%">Text Size</h2>
+    <p>
+        style="font-size:[argument]" to change text size!
+    </p>
+
+    <h2>Text Alignment</h2>
+    <p style="text-align:center;">
+        style="text-align:[alignment];" to center, left align, right align etc.
+    </p>
+
+    <h2 style="border:2px solid #ff6347;">Borders</h2>
+    <p>
+        Borders can be done in style like this:
+        <br> style="border:2px solid colourName];"
+    </p>
+
+    <h2>Formatting Elements</h2>
+    <pre>
+        - b         =   <b>Bold</b>
+        - strong    =   <strong>Important text</strong>
+        - i         =   <i>Italic</i>
+        - em        =   <em>Emphasized text</em>
+        - mark      =   <mark>Marked text</mark>
+        - small     =   <small>Smaller text</small>
+        - del       =   <del>Deleted text</del>
+        - ins       =   <ins>Inserted text</ins>
+        - sub       =   <sub>Subscript text</sub>
+        - sup       =   <sup>Superscript text</sup>
+    </pre>
+    <hr>
+
+    <h1>Quotation/Citation Elements</h1>
+    <h2>blockquote for quotations</h2>
+    <p>
+        blockquote element defines a section quoted from another source.
+        <br> Here's a quote from 
+    </p>
+    <blockquote cite="https://github.com/D4v1dHu0/Learning_HTML/tree/learning_progress">	
+        INDUSTRIAL SOCIETY AND ITS FUTURE
+        <br>Introduction
+        <br>1. The Industrial Revolution and its consequences have been a disaster for the human race... 
+    </blockquote>
+
+    <h2>Short Quotations q</h2>
+    <p>
+        q tag defines a short quote
+        <br> In the manifesto, Unabomber argued that the industrial revolution is <q>a disaster for the human race</q>.
+    </p>
+
+    <h2>Abbreviations abbr</h2>
+    <p>
+        abbr tag defines abbreviations/acronyms. E.g.
+        <br>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+    </p>
+
+    <h2>Contact Info</h2>
+    <p>
+        address tag defines contact info. E.g.
+    </p>
+    <address>
+        <br> Written by Joe Scova.
+        <br>Visit us at:
+        <br>PheonixUlt.com
+        <br>Box 564, Ascent
+        <br>AUS
+    </address>
+
+    <h2>Work Title</h2>
+    <p>
+        cite tag defines title of a book, poem, song etc. E.g.
+        <br><cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+    </p>
+
+    <h2>Bi-Directional Override</h2>
+    <p>
+        bdo tag is used to override text direction. E.g.
+        <br> 
+        <bdo dir="rtl">This text will be written from right to left. 
+            <br> A civic madam deified a racecar. 
+        </bdo>
+        Palindromes are fun :D
+    </p>
+    <hr>
+
+    <h1>HTML Styles - CSS</h1>
+    <p>
+
+    </p>
+
+
+
 
 
 

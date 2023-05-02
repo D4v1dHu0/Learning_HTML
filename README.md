@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# LEARNING HTML
-=======
-#LEARNING HTML
->>>>>>> 4b328274b4133987f4948436f7be0151675dad96
+# Learning HTML
 
 As a part of my COMP4060 Continuing Professional Developement project, I wish to learn JavaScript. 
 However, I've soon discovered that HTML is a prerequisite for JavaScript. 
